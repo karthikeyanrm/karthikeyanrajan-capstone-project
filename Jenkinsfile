@@ -28,10 +28,10 @@ pipeline {
 
                         // Build and Deploy Docker commands for 'dev'
                         sh './build.sh'
-                        sh 'docker tag reactjs-demo:latest karthikeyanrm/devrepo:latest'
-                        sh 'docker push karthikeyanrm/devrepo:latest'
+                        sh 'docker tag reactjs-demo:latest karthikeyanrajan/devrepo:01'
+                        sh 'docker push karthikeyanrajan/devrepo:01'
                         sh 'docker rmi -f reactjs-demo:latest'
-                        sh 'docker rmi -f karthikeyanrm/devrepo:latest'
+                        sh 'docker rmi -f karthikeyanrajan/devrepo:latest'
                         sh 'docker-compose down'
                         sh 'docker-compose -f docker-compose-dev.yml up -d'
                         
@@ -50,10 +50,10 @@ pipeline {
 
                         // Build and Deploy Docker commands for 'master'
                         sh './build.sh'
-                        sh 'docker tag reactjs-demo:latest karthikeyanrm/prodrepo:01'
-                        sh 'docker push karthikeyanrm/prodrepo:01'
+                        sh 'docker tag reactjs-demo:latest karthikeyanrajan/prodrepo:01'
+                        sh 'docker push karthikeyanrajan/prodrepo:01'
                         sh 'docker rmi -f reactjs-demo:latest'
-                        sh 'docker rmi -f karthikeyanrm/prodrepo:01'
+                        sh 'docker rmi -f karthikeyanrajan/prodrepo:01'
                         sh 'docker-compose down'
                         sh 'docker-compose -f docker-compose-prod.yml up -d'
                     } else {
