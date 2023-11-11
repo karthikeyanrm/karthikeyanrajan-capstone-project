@@ -8,15 +8,15 @@ You can use the Gdrive line for the project files : https://drive.google.com/dri
 # This Repo Contains three branches :
 
 # Main branch
-On main branch the all Project files are available
-On project-submission-files folder - Configurationfiles folder - installation steps & config files are uploaded
-On project-submission-files folder - Screenshots are uploaded
+  * On main branch the all Project files are available
+  * On project-submission-files folder -> Configurationfiles folder -> installation steps & config files are uploaded
+  * On project-submission-files folder -> Screenshots are uploaded
 
 # Dev branch
-   On dev branch uploaded with jenkins pipeline files 
+  * On dev branch uploaded with jenkins pipeline files 
 
 # Master branch
-On master branch uploaded with jenkins pipeline files
+  * On master branch uploaded with jenkins pipeline files
 
 # Note:
 To see particular pictures mentioned in this document
